@@ -5,15 +5,15 @@ import {AppContext} from "./App";
 export default () => {
     const choice = ['play tennis', 'swim', 'play golf', 'dance', 'ride a bike'];
     const context = useContext(AppContext);
-    const [inp, setInp] = useState( choice[0]);
+    const [inp, setInp] = useState(choice[0]);
 
     return (
+        <div className='form'>
         <form onSubmit={event => {
             event.preventDefault();
         }}>
         <select value={inp} onChange={e => {
             setInp(e.target.value);
-            console.log(e.target.value);
         }}>
             {choice.map((c,i) => <option value={c} key={i}>{c}</option>)}
     </select>
@@ -23,5 +23,6 @@ export default () => {
                        context.add(inp);
                    }}>Submit</button>
         </form>
+        </div>
     )
 }

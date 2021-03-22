@@ -3,7 +3,6 @@ import Question from "./Question";
 import * as React from "react";
 import {useState} from "react";
 import Answer from "./Answer";
-import youtube from "random-youtube-video-by-keyword";
 
 export const AppContext = React.createContext();
 function App() {
@@ -24,10 +23,6 @@ function App() {
             answers.length < 3 ?
                 <Question/> : <Answer/>
         }
-        {/*<hr/>*/}
-        {/*<ul>*/}
-        {/*    {answers.map((a, i) =><li style={{listStyle: 'none'}} key={i}>{a}</li>)}*/}
-        {/*</ul>*/}
     </div>
     </AppContext.Provider>
   );

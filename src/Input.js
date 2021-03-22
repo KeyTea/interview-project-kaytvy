@@ -7,6 +7,7 @@ export default () => {
     const context = useContext(AppContext);
 
     return (
+        <div className='form'>
         <form onSubmit={event => {
             event.preventDefault();
         }}>
@@ -30,5 +31,6 @@ export default () => {
     }>Next
     </button>
         </form>
+        </div>
     )
 }
