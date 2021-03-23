@@ -72,29 +72,15 @@ h4 {
   color: #37044e;
 }
 
-iframe {
-  width: 640px;
-  height: 360px;
-  margin: auto;
-}
-
-@media all and (max-width: 640px) {
-  iframe {
-    width: 320px;
-    height: 180px;
-    margin: auto;
-  }
-}
-
 input, button {
   display: block;
   margin: 10vh auto;
 }
 
-.form {
-  height: 50vh;
-  position: relative;
-}
+/*.form {*/
+/*  height: 50vh;*/
+/*  position: relative;*/
+/*}*/
 
 .form form {
   margin: 0;
@@ -105,9 +91,36 @@ input, button {
   transform: translate(-50%, -50%);
 }
 
-@media all and (max-width: 200px) {
+iframe {
+  margin-top: 10px;
+}
+
+@media all and (orientation: landscape) {
+  iframe {
+    width: auto;
+    max-height: 50%;
+  }
+  /*.video {*/
+  /*  min-height: 100%;*/
+  /*}*/
+}
+
+@media all and (max-width: 300px) {
   input {
     font-size: small;
     padding: 2vh 0;
   }
+  iframe {
+    width: 160px;
+    height: 90px;
+  }
 }
+
+.content {
+    position: relative;
+    min-height: 100vh;
+}
+.wrapper {
+  padding-bottom: 2.5rem;
+}
+

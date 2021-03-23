@@ -43,8 +43,11 @@ export default () => {
             return <Loader/>;
         } else {
             return (
+                <>
+                    <div className='video'></div>
                 <iframe id="ytplayer" type="text/html" frameBorder="0" allowFullScreen>
                 </iframe>
+                </>
             );
         }
     }

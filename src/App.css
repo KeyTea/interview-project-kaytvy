@@ -6,13 +6,13 @@
   background-image: linear-gradient( #ffffff,#eabbea, #b755d2, indigo);
   width: 100%;
   vertical-align: center;
-  margin-top: 5vh;
+  margin-top: 2.5rem;
   padding: 5vh 0 0 0;
   color: white;
   position:absolute;
   bottom:0;
-  height: 10vh;
-  font-size: x-large;
+  height: 2.5rem;
+  font-size: large;
 }
 
 .header {
@@ -21,7 +21,7 @@
   width: 100%;
   height: 15vh;
   padding-top: 5vh;
-  font-size: x-large;
+  font-size: large;
 }
 
 .error {

@@ -26,13 +26,15 @@ export default () => {
        return sum > 0 ? false : true;
     }
     return (
-        <div>
+            <div className='content'>
+        <div className='wrapper'>
             <div className='header'>Answer</div>
             <Video/>
             <h4>Hi {context.answers[0]} lover, how is {context.answers[1]} are doing this year? Don’t forget to {context.answers[2]}!</h4>
+        </div>
             <div className='footer'>
                 {isPrime() ? <Emojione text=":)"/> : <Emojione text=":("/>}
             </div>
-        </div>
+            </div>
     )
 }
